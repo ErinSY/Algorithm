@@ -1,3 +1,21 @@
+# 새로 알게된 메소드 : 최대/최소값 구하기 _ Math.min()/max()
+- () 안에 숫자변수들이 들어감
+- () 안에 숫자를 요소로 하는 배열이 들어가게되면 NaN을 리턴
+```js
+let numArr = [1, 2, 3]
+Math.min(numArr)    // NaN
+Math.max(numArr)    // NaN
+
+// 배열을 사용하려면 destructing 할당을 사용
+// destructing 할당: JavaScript에서 배열의 요소들을 별도의 변수로 만들어줌
+let numArr = [1, 2, 3]
+Math.min(...numArr)    // NaN
+Math.max(...numArr)    // NaN
+
+```
+
+------
+
 # [level 1] 제일 작은 수 제거하기 - 12935 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12935) 
