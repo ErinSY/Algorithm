@@ -1,3 +1,15 @@
+# 새로 알게된 메소드 : 문자열 자르기
+```js
+// 대괄호 부분은 생략 가능 
+str.substr(start[, length])
+str.substring(indexStart[, indexEnd])
+str.slice(beginIndex[, endIndex])
+```
+
+
+------
+
+
 # [level 1] 가운데 글자 가져오기 - 12903 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12903) 
