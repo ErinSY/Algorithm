@@ -1,10 +1,34 @@
+# 새로배운 메서드 : reduce
+> 계속 다른사람들 풀이에 보 써보고싶어서 봤는데 신세계👍
+
+# 초기풀이
+```js
+function solution(a, b) {
+    var answer = 0;
+    for (let i=0;i<a.length;i++){
+        answer+=a[i]*b[i]
+    }
+    return answer;
+}
+```
+
+# reduce 함수사용
+```js
+// reduce함수의 기본구조 : arr.reduce(callback[, initialValue])
+// callback 인자 : 1. accumulator(초기값 ; 콜백의 반환값) 2. currentValue (현재처리할 요소) 3. currentIndex(처리할 현재 요소의 인덱스,Optional)
+function solution(a, b) {
+ return a.reduce((acc,cur,idx)=> acc+=a[idx]*b[idx],0)
+}
+```
+
+
 # [level 1] 내적 - 70128 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128) 
 
 ### 성능 요약
 
-메모리: 33.5 MB, 시간: 0.15 ms
+메모리: 33.4 MB, 시간: 0.08 ms
 
 ### 구분
 
