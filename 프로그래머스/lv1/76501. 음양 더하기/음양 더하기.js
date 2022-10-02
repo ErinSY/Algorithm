@@ -1,7 +1,4 @@
-function solution(abs, signs) {
-    let answer = 0;
-    for(let i in abs){
-    answer+=signs[i]?abs[i]:-abs[i]
-         }
+function solution(absolutes, signs) {
+    var answer = 123456789;
     return answer;
 }
